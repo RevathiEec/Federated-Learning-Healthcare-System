@@ -29,30 +29,31 @@ A Flask-based dashboard is provided to monitor the federated learning process an
 
 ## 🚀 Key Features
 
-### 🏥 Multi-Hospital Simulation
+### 🏥 Multi-Hospital Federated Learning Simulation
 
-The system simulates three independent hospitals.
+The system simulates three independent hospitals. Each hospital has its own local dataset and performs model training independently.
 
-Each hospital has its own local dataset and performs model training independently.
+The complete workflow is:
 
 ```text
 Hospital 1 ──┐
 Hospital 2 ──┼──> Local Training
 Hospital 3 ──┘
-
-
-The project uses a federated learning workflow:
-
-Global Model
-     ↓
-Local Training
-     ↓
-Privacy Protection
-     ↓
-Model Updates
-     ↓
-Federated Averaging
-     ↓
-Updated Global Model
-     ↓
-Next Round
+                   ↓
+              Privacy Protection
+                   ↓
+              Model Updates
+                   ↓
+           Federated Averaging
+                   ↓
+             Updated Global Model
+                   ↓
+                Next Round
+                   ↓
+              Local Training
+                   ↓
+              Privacy Protection
+                   ↓
+           Federated Averaging
+                   ↓
+                Next Round
