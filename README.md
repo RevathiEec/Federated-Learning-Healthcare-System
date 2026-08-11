@@ -41,7 +41,7 @@ Hospital 2 ──┼──> Local Training
 Hospital 3 ──┘
 
 
-### The project uses a federated learning workflow:
+The project uses a federated learning workflow:
 
 Global Model
      ↓
