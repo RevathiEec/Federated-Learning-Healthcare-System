@@ -39,7 +39,9 @@ Each hospital has its own local dataset and performs model training independentl
 Hospital 1 ──┐
 Hospital 2 ──┼──> Local Training
 Hospital 3 ──┘
-The project uses a federated learning workflow:
+
+
+### The project uses a federated learning workflow:
 
 Global Model
      ↓
